@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of schools</title>
+</head>
+<body>
+
+    <center>
+        <h1>List of Schools</h1>
+
+        {% for school in schools %}
+            <a href="{% url 'SchoolDetailView' pk=school.pk %}">
+                <h2>{{school.scname}}</h2>
+                <h3>{{school.scloc}}</h3>
+                <h4>{{school.scprincipal}}</h4>
+            </a>
+        {% endfor %}
+    </center>
+    
+</body>
+</html>
