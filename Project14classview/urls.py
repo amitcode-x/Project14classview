@@ -24,4 +24,4 @@ urlpatterns = [
     path('school/', SchoolListView.as_view(), name="SchoolListView"),
     re_path('(?P<pk>\d+)/', SchoolDetailView.as_view(), name="SchoolDetailView")
 ]
-    
+        
